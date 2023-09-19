@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template 1</title>
+</head>
+<body>
+    <h1> Vista Template 1</h1>
+    <p style="color : red"> Mi nombre es: {{nombre}}</p>
+    <p style="color : green"> mi apeliido es : {{apellido}}</p>
+    <h2> Fecha : {{hoy}} </h2>
+    <h3> Numeros del 1 al 7 </h3>
+    <ul>
+        {% for n in notas %}
+        {% if n < 4 %}
+        <li style="color: red;"> {{n}} </li>
+        {% else %}
+        <li style="color: green;"> {{n}} </li>
+        {% endif %}
+        {% endfor %}
+    </ul>
+</body>
+</html>
